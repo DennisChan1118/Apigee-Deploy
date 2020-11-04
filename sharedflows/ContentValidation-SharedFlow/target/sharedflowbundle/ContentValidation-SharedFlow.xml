@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle name="ContentValidation-SharedFlow">
+    <DisplayName>ContentValidation-SharedFlow</DisplayName>
+    <Description>Detect request content-based attacks like SQL Injection and XSS.</Description>
+</SharedFlowBundle>

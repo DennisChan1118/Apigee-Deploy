@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-GetFaultContent">
+    <DisplayName>EV-GetFaultContent</DisplayName>
+    <Source>error</Source>
+    <JSONPayload>
+        <Variable name="flow.fault.errorcode" type="string">
+            <JSONPath>$.fault.detail.errorcode</JSONPath>
+        </Variable>
+        <Variable name="flow.fault.errormessage" type="string">
+            <JSONPath>$.fault.faultstring</JSONPath>
+        </Variable>
+    </JSONPayload>
+</ExtractVariables>

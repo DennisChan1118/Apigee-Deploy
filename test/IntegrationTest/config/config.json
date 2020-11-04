@@ -1,0 +1,5 @@
+{
+    "schema": "http",
+    "domain": "dennischan-29880-eval-test.apigee.net",
+    "basepath": "/api/v1.0/membership"
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "entry": [
+            {
+                "name": "membership-v1-target-basepath",
+                "value": "/next-api-sit/ap2/api/v1.0/membership"
+            },
+            {
+                "name": "membership-v2-target-basepath",
+                "value": "/next-api-sit/ap2/api/v2.0/membership"
+            }
+        ],
+        "name": "apiproxy-targetbasepath"
+    }
+]

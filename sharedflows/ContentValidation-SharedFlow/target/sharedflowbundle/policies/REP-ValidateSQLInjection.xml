@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="REP-ValidateSQLInjection">
+    <DisplayName>REP-ValidateSQLInjection</DisplayName>
+    <Source>request</Source>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload escapeSlashCharacter="true">
+        <JSONPath>
+            <Expression>$.</Expression>
+            <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+        </JSONPath>
+    </JSONPayload>
+</RegularExpressionProtection>

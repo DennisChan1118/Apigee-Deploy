@@ -1,0 +1,11 @@
+[
+    {
+        "name": "nextbank-sit",
+        "host": "asia-east2-tw-rd-ca-dennis-chan.cloudfunctions.net",
+        "isEnabled": true,
+        "port": 443,
+        "sSLInfo": {
+            "enabled": "true"
+        }
+    }
+]

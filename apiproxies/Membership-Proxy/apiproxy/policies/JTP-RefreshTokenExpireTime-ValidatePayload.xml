@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JSONThreatProtection async="false" continueOnError="false" enabled="true" name="JTP-RefreshTokenExpireTime-ValidatePayload">
+    <DisplayName>JTP-RefreshTokenExpireTime-ValidatePayload</DisplayName>
+    <Source>request</Source>
+    <ArrayElementCount>0</ArrayElementCount>
+    <ContainerDepth>1</ContainerDepth>
+    <ObjectEntryCount>0</ObjectEntryCount>
+    <ObjectEntryNameLength>-1</ObjectEntryNameLength>
+    <StringValueLength>-1</StringValueLength>
+</JSONThreatProtection>

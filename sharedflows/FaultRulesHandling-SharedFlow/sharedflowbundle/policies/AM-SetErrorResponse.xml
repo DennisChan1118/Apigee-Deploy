@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-SetErrorResponse">
+    <DisplayName>AM-SetErrorResponse</DisplayName>
+    <Set>
+        <Payload contentType="application/json">
+            {
+                "error": {
+                    "errorCode": "APIM_{escapeJSON(flow.error.code)}",
+                    "errorMessage": "{escapeJSON(flow.error.message)}"
+                },
+                "success": false
+            }
+        </Payload>
+        <StatusCode>200</StatusCode>
+        <ReasonPhrase>OK</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

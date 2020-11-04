@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Raise404Fault">
+    <DisplayName>RF-Raise404Fault</DisplayName>
+    <FaultResponse>
+        <AssignVariable>
+            <Name>flow.error.code</Name>
+            <Value>apiproxy.NoMatchUrl</Value>
+        </AssignVariable>
+        <AssignVariable>
+            <Name>flow.error.message</Name>
+            <Template>[404 Not Found] The requested URL {proxy.pathsuffix} was not found on the {apiproxy.name} proxy.</Template>
+        </AssignVariable>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

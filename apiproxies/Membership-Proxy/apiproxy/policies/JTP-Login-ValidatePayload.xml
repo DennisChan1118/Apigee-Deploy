@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JSONThreatProtection async="false" continueOnError="false" enabled="true" name="JTP-Login-ValidatePayload">
+    <DisplayName>JTP-Login-ValidatePayload</DisplayName>
+    <Source>request</Source>
+    <ArrayElementCount>0</ArrayElementCount>
+    <ContainerDepth>1</ContainerDepth>
+    <ObjectEntryCount>4</ObjectEntryCount>
+    <ObjectEntryNameLength>-1</ObjectEntryNameLength>
+    <StringValueLength>-1</StringValueLength>
+</JSONThreatProtection>
