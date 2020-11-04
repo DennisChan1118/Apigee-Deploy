@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<MessageValidation async="false" continueOnError="false" enabled="true" name="SMV-ValidatePayloadFormat">
-    <DisplayName>SMV-ValidatePayloadFormat</DisplayName>
-    <Source>request</Source>
-</MessageValidation>
