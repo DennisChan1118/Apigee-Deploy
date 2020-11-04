@@ -9,7 +9,7 @@
         "url": "https://github.com/apickli/apickli.git"
     },
     "scripts": {
-        "test": "cucumber-js -f json:result/result.json",
+        "test": "cucumber-js -f json:report/report.json",
         "report": "node report/index.js"
     },
     "keywords": [

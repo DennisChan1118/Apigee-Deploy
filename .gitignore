@@ -1,5 +1,6 @@
 .DS_Store
 test/IntegrationTest/node_modules
 test/IntegrationTest/package-lock.json
-test/IntegrationTest/result/*
+test/IntegrationTest/report/report.*
 apiproxies/*/target
+sharedflows/*/target
