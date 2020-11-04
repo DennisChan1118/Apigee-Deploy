@@ -1,3 +1,5 @@
 .DS_Store
 test/IntegrationTest/node_modules
 test/IntegrationTest/package-lock.json
+test/IntegrationTest/result/result.html
+test/IntegrationTest/result/result.json

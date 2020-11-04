@@ -3,7 +3,7 @@
 
 var config = require('../../config/config.json');
 
-const apickli = require('../../apickli/apickli.js');
+const apickli = require('apickli');
 const { defineSupportCode } = require('cucumber');
 
 
