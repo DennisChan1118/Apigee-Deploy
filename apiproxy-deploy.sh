@@ -1,32 +1,40 @@
 #!/bin/bash
 
-if [ -n "$username" ]
-then
-    echo "> Username:"
-    echo $username
-else
-    echo "> Username:"
-    read username
-fi
+input () {
+    if [ -n "$username" ]; then
+        echo "> Username:"
+        echo $username
+    else
+        echo "> Username:"
+        read username
+    fi
 
-if [ -n "$password" ]
-then
-    echo "> Password:"
-    echo "*****"
-else
-    echo "> Password:"
-    read -s password
-fi
+    if [ -n "$password" ]; then
+        echo "> Password:"
+        echo "*****"
+    else
+        echo "> Password:"
+        read -s password
+    fi
 
-echo "> API Proxy Name:"
-read apiproxy
+    echo "> Target Profile:"
+    read profile
+}
 
-echo "> Target Profile:"
-read profile
+deploy () {
+    currentPath=$(pwd)
 
-mvnpath="./apiproxies/$apiproxy/"
+    for apiproxy in "${target_proxies[@]}"
+    do
+        echo "> Deploy '$apiproxy'..."
+        cd $currentPath/apiproxies/$apiproxy
+        mvn install -P$profile -Dusername=$username -Dpassword=$password -Dhosturl=$hosturl -Dapiversion=$apiversion -Dorg=$org -Denv=$env -Doptions=$options -Doverride_delay=$override_delay -Ddelay=$delay
+        echo
+    done
+}
 
-echo "> Move to '$mvnpath'..."
-cd $mvnpath
-echo "> Deploy '$apiproxy'..."
-mvn install -P$profile -Dusername=$username -Dpassword=$password
+
+
+input
+. profile-$profile.config
+deploy
