@@ -32,7 +32,7 @@ undeploy () {
         current_deployment_resp=$(curl -u "$username:$password" "$hosturl/$apiversion/organizations/$org/environments/$env/apis/$apiproxy/deployments")
         current_revision=$(jq -r .revision[0].name <<< "${current_deployment_resp}") 
 
-        if [ "${#revisions[@]}" -gt 0 ]; then
+        if [ "${#revisions[@]}" -gt 1 ]; then
             if [ "${revisions[${#revisions[@]} - 1]}" == "$current_revision" ]; then
                 stable_revision=${revisions[${#revisions[@]} - 2]}
             else

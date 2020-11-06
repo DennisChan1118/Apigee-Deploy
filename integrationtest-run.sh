@@ -5,7 +5,7 @@ read apiproxy
 
 echo "> Move to 'test/IntegrationTest'..."
 cd test/IntegrationTest
-echo "> Install NodeJs packages..."
+echo "> Install NodeJS packages..."
 npm install
 echo "> Run integration test for $apiproxy..."
 npm run-script test -- features/Feature_$apiproxy
